@@ -3,14 +3,18 @@
     "files": true
   },
   "compilerOptions": {
-    "target": "es2018",
-    "lib": ["es2018", "DOM"],
+    "target": "es6",
     "esModuleInterop": true,
     "module": "commonjs",
+    "strict": true,
     "strictNullChecks": false,
     "types": ["codeceptjs", "node"],
     "declaration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
+  "include": [
+    "step_definitions/**/*.ts",
+    "steps.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
